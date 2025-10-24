@@ -1,115 +1,117 @@
-Real-Time Network-Based Intrusion Detection System
+# Real-Time Network-Based Intrusion Detection System
 
-A machine learning-powered cybersecurity solution that detects and predicts abnormal network behavior in real time.
+A **machine learning-powered cybersecurity solution** that detects and predicts **abnormal network behavior in real time**.
 
+---
 
-Real-time Network Traffic Analysis and Anomaly Visualization
+## Real-Time Network Traffic Analysis and Anomaly Visualization
 
-Project Overview
+### Project Overview
 
-As cyber threats and data breaches continue to rise, organizations need automated, intelligent systems to detect intrusions before they cause significant damage. Traditional intrusion detection systems (IDS) often rely on static rules or outdated signatures, making them ineffective against zero-day attacks or evolving threats.
+As **cyber threats and data breaches** continue to rise, organizations need **automated, intelligent systems** to detect intrusions before they cause significant damage.
+Traditional **Intrusion Detection Systems (IDS)** often rely on **static rules** or **outdated signatures**, making them ineffective against **zero-day attacks** or evolving threats.
 
-This project introduces a real-time, machine learning-based intrusion detection system using the Isolation Forest algorithm to accurately identify anomalies in live network traffic.
+This project introduces a **real-time, machine learning-based intrusion detection system** using the **Isolation Forest algorithm** to accurately identify **anomalies in live network traffic**.
 
-Problem Statement
+---
+
+## Problem Statement
 
 Most traditional IDS tools:
 
-Depend on static rule sets or predefined signatures
+* Depend on **static rule sets or predefined signatures**
+* Struggle to **detect unknown or evolving attacks**
+* Generate **high false positives and delayed responses**
 
-Struggle to detect unknown or evolving attacks
+These limitations leave networks **vulnerable to emerging and dynamic cyber threats**.
 
-Generate high false positives and delayed responses
+---
 
-These limitations leave networks vulnerable to emerging and dynamic cyber threats.
+## Solution
 
-Solution
+This system leverages **machine learning** to dynamically analyze **real-time network traffic**.
+Using the **Isolation Forest model**, it detects abnormal patterns that deviate from normal traffic behavior — **identifying intrusions early and accurately**.
 
-This system leverages machine learning to dynamically analyze real-time network traffic.
-Using the Isolation Forest model, it detects abnormal patterns that deviate from normal traffic behavior — identifying intrusions early and accurately.
+---
 
-Key Features
-Feature	Description
-Real-time Monitoring	Continuous packet capture and traffic inspection using Scapy
-ML-Based Detection	Isolation Forest algorithm for anomaly detection
-Visualization Dashboard	Flask-based live dashboard with dynamic Plotly charts
-Alert Notifications	Email and log alerts for immediate threat response
-Scalable Architecture	Lightweight Flask app, easy to deploy across environments
-Data Analytics	Visual insights using Matplotlib and Seaborn
-Technologies Used
+## Key Features
 
-Python
+| **Feature**                 | **Description**                                                  |
+| --------------------------- | ---------------------------------------------------------------- |
+| **Real-time Monitoring**    | Continuous packet capture and traffic inspection using **Scapy** |
+| **ML-Based Detection**      | **Isolation Forest algorithm** for anomaly detection             |
+| **Visualization Dashboard** | **Flask-based live dashboard** with dynamic **Plotly** charts    |
+| **Alert Notifications**     | **Email and log alerts** for immediate threat response           |
+| **Scalable Architecture**   | Lightweight **Flask app**, easy to deploy across environments    |
+| **Data Analytics**          | Visual insights using **Matplotlib** and **Seaborn**             |
 
-Scikit-Learn
+---
 
-Pandas
+## Technologies Used
 
-NumPy
+* **Python**
+* **Scikit-Learn**
+* **Pandas**
+* **NumPy**
+* **Matplotlib**
+* **Seaborn**
+* **Flask**
+* **Scapy**
+* **Plotly**
+* **Isolation Forest**
 
-Matplotlib
+---
 
-Seaborn
+## How It Works
 
-Flask
+### 1. Network Packet Capture
 
-Scapy
+* Uses **Scapy** to capture live packets in real time
+* Monitors **incoming and outgoing traffic**
+* Analyzes **protocols and network flow**
 
-Plotly
+### 2. Feature Extraction & Preprocessing
 
-Isolation Forest
+* Extracts essential statistical features (**packet rate, IPs, protocols, etc.**)
+* Normalizes data for **machine learning processing**
+* Performs **feature engineering** for optimal model performance
 
-How It Works
-1. Network Packet Capture
+### 3. Machine Learning Analysis
 
-Uses Scapy to capture live packets in real time
+* Applies **Isolation Forest** for **outlier detection**
+* Generates **anomaly scores**
+* Identifies **suspicious patterns** in network activity
 
-Monitors incoming and outgoing traffic
+### 4. Visualization & Alerting
 
-Analyzes protocols and network flow
+* Displays results in a **Flask dashboard**
+* Provides **real-time visualization** using **Plotly**
+* Sends **immediate alerts** when threats are detected
 
-2. Feature Extraction & Preprocessing
+---
 
-Extracts essential statistical features (packet rate, IPs, protocols, etc.)
+## Results & Outcome
 
-Normalizes data for ML processing
+| **Metric**      | **Result**                                            |
+| --------------- | ----------------------------------------------------- |
+| **Accuracy**    | **95%+**                                              |
+| **Performance** | **Real-time detection with low latency**              |
+| **Reliability** | **Reduced false positives and faster response times** |
 
-Performs feature engineering for optimal model performance
+This system efficiently **detects and visualizes network anomalies**, empowering security teams with **immediate insights and alerts**.
 
-3. Machine Learning Analysis
+---
 
-Applies Isolation Forest for outlier detection
+## Future Improvements
 
-Generates anomaly scores
+* Integrate **deep learning models** (e.g., **LSTM**, **Autoencoders**) for advanced anomaly detection
+* Add **self-learning modules** to adapt to evolving attack patterns
+* Implement **mobile push notifications** for instant alerts
+* Enhance dashboard with **network topology visualization**
 
-Identifies suspicious patterns in network activity
+---
 
-4. Visualization & Alerting
+## Conclusion
 
-Displays results in a Flask dashboard
-
-Real-time visualization using Plotly
-
-Sends immediate alerts when threats are detected
-
-Results & Outcome
-
-Accuracy: 95%+
-Performance: Real-time detection with low latency
-Reliability: Reduced false positives and faster response times
-
-This system efficiently detects and visualizes network anomalies, empowering security teams with immediate insights and alerts.
-
-Future Improvements
-
-Integrate deep learning models (e.g., LSTM, Autoencoders) for advanced anomaly detection
-
-Add self-learning modules to adapt to evolving attack patterns
-
-Implement mobile push notifications for instant alerts
-
-Enhance dashboard with network topology visualization
-
-Conclusion
-
-This project demonstrates how machine learning can transform cybersecurity.
-By analyzing live network traffic and detecting anomalies in real time, it helps prevent intrusions before they escalate, ensuring a safer digital environment.
+This project demonstrates how **machine learning** can transform **cybersecurity**.
+By analyzing **live network traffic** and detecting **anomalies in real time**, it helps **prevent intrusions before they escalate**, ensuring a **safer digital environment**.
